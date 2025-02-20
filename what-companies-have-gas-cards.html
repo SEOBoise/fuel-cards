@@ -1,186 +1,224 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="author" content="John Boden - Fuel Card Resource" />
-        <title>What companies have gas cards?</title>
-        <meta name="description"
-              content="Discover which companies offer gas cards and find the perfect solution for your fuel needs. From major gas stations to popular retail stores, we explore the diverse options available to help you save on your next fill-up. Whether you're a frequent traveler, a small business owner, or simply looking to cut down on expenses, our comprehensive guide has you covered. Explore this blog post now and make informed decisions about which gas card is right for you."/>
-        <link rel="icon" href="" type="image/x-icon" />
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-         <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+<html lang="en">
 
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="article/css/styles.css" rel="stylesheet" />
-          
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=62dc22846895ac00191ea9d1&product=inline-share-buttons" async="async"></script>
+<head>
+    <meta charset="utf-8">
+    <title>What companies have gas cards?</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-          <style>
-           h3 {
-          font-size: 24px !important;
-          }
-          p{
-          margin-bottom: 28px !important;
-          }
-        .bg-header {
-          --bs-bg-opacity: 1;
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-          background-image: linear-gradient(rgba(0, 0, 0, 0.6),#000000) !important;
-    }
-        .bg-footer {
-          --bs-bg-opacity: 1;
-         background-image: linear-gradient(#000000,#000000) !important;
-        }
-        .header-text-color{
-            color: #ffffff !important;
-        }
-        .footer-text-color{
-            color: #ffffff !important;
-        }
-         .footer-text-color .navbar-brand{
-        color: #ffffff !important;
-        }
-</style>
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-header">
-            <div class="container">
-                <a style="color: inherit; text-decoration: inherit;" href="https://fuel-cards.net">
-                <span class="navbar-brand"><img style="max-height:30px; height: 30px !important; display: none " src="" onerror="this.remove()"></span>
-                <span class="navbar-brand header-text-color">Fleet Fuel Card</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="display: none">
-                       <li class="nav-item"  style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-facebook"></i></a></li>
-                       <li class="nav-item"  style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-twitter"></i></a></li>
-                        <li class="nav-item" style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-instagram"></i></a></li>
-                        <li class="nav-item" style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-pinterest"></i></a></li>
-                        <li class="nav-item" style="display: none"><a class="nav-link header-text-color" target="_blank"  href=""><i class="icon-social-youtube"></i></a></li>
-                    </ul>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+<style>
+img {
+    margin-bottom: 25px;
+}
+</style>	
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+          <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="https://fuel-cards.net/" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <img src="img/fuelcardlogo.webp" class="logosize">
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                        <div class="col-lg-7 px-5 text-start">
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                                <i class="fa fa-envelope text-primary me-2"></i>
+                                <p class="mb-0">info@fuel-cards.net</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                          
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="https://fuel-cards.net/" class="nav-item nav-link">Home</a>
+                                <a href="wex.html" class="nav-item nav-link">WEX</a>
+                                <a href="shell.html" class="nav-item nav-link">Shell</a>
+                                <a href="citgo.html" class="nav-item nav-link">Citgo</a>
+								<a href="valero.html" class="nav-item nav-link">Valero</a>
+								<a href="blog.html" class="nav-item nav-link active">Blog</a>
+								<a href="about.html" class="nav-item nav-link">About</a>
+                            </div>
+                            <a href="contact.html" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Contact<i class="fa fa-arrow-right ms-3"></i></a>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </nav>
-        <header class="py-2 border-bottom mb-4" style="display: none">
-            <div class="container ql-editor" id="sitewide-header" >
-                  
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
+            <div class="container-fluid page-header-inner py-5">
+                <div class="container text-center pb-5">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">What companies have gas cards?</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">What companies have gas cards?</li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
-        </header>
-    <!-- Page Content-->
-        <section class="pt-4">
-            <div class="container px-lg-5">
-                <!-- Page Features-->
-                <div class="row gx-lg-5">
-                    <!-- Header-->
-        <header class="py-5">
-            <div class="container px-lg-5" >
-                <div class="col-lg-12 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature-blog text-white rounded-3 mb-4 mt-n4">
-                                    <img class="img-fluid rounded" src="44422.jpg?key=bCRlFH" alt="..." />
-                                </div>
-                                <h1 class="display-6 fw-bold">What companies have gas cards?</h1>
-                                <div class="small text-muted"></div>
-                                <div class="text-muted fst-italic mb-2"></div>
+        </div>
+        <!-- Page Header End -->
+
+
+       <!-- About Start -->
+        <div class="container-xxl">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-12">
+                         <h1 class="mb-4" style="color:#FEA116;">What companies have gas cards?</h1>
+<img src="img/1_blog.png" /> 
+
+<h2>Shell</h2><p>Shell is a global energy company that focuses on providing energy solutions to meet the world's growing demand. With operations in more than 70 countries, Shell is involved in various aspects of the energy industry, including exploration, production, refining, and marketing. The company is constantly investing in research and development to develop innovative technologies and sustainable energy solutions. Shell also places great emphasis on safety and environmental stewardship in all its operations.<br><br>One of Shell's key strengths lies in its diverse portfolio, which includes not only oil and gas, but also renewable energy sources such as biofuels, wind, and solar. This diversification allows the company to adapt to changing market conditions and contribute to the global transition towards a low-carbon future. Additionally, Shell is actively exploring opportunities in areas such as electric vehicle charging infrastructure and hydrogen fuel cell technology, positioning itself as a leader in the energy transition. With its strong track record and commitment to innovation, Shell continues to play a vital role in ensuring a reliable and sustainable energy supply for the world.</p><h2>ExxonMobil</h2><p>With a history that spans over a century, ExxonMobil has firmly established itself as one of the world's leading energy companies. Known for its relentless pursuit of innovation, the company has consistently pushed the boundaries of what is possible in the oil and gas industry.  <br><br>ExxonMobil's dedication to sustainability is evident in its commitment to reducing greenhouse gas emissions and investing in renewable energy sources. The company has made significant advancements in developing cleaner technologies and has implemented rigorous measures to ensure that operations are conducted in an environmentally responsible manner. By continually seeking ways to minimize its environmental impact and promote sustainable practices, ExxonMobil is positioning itself as a leader in the transition to a low-carbon future.</p><h2>Chevron</h2><p>Chevron is one of the major players in the oil and gas industry, known for its global presence and diverse portfolio. With operations spanning across more than 180 countries, Chevron has established itself as a leading integrated energy company. The company's primary focus remains on exploration, production, refining, and marketing of petroleum and petrochemical products.<br><br>From cutting-edge technology solutions to strong partnerships, Chevron is committed to delivering reliable and affordable energy solutions to meet the world's growing demand. With a solid track record of operational excellence, Chevron continually strives towards sustainable practices and reducing the environmental impact of its operations. Furthermore, the company is actively investing in research and development to drive innovation in the energy sector.<br><br>Chevron's commitment to safety, integrity, and corporate responsibility is evident in its stringent safety protocols and compliance standards. The company places great importance on maintaining a positive relationship with communities where it operates, promoting local economic development and community engagement initiatives. As Chevron continues to navigate the evolving energy landscape, it remains dedicated to providing value to its stakeholders while maintaining a strong focus on sustainability and responsible business practices.</p><h2>BP</h2><p>BP, one of the leading players in the global energy market, has established itself as a major oil and gas company. With operations spanning across six continents, BP's presence is felt in numerous countries, contributing significantly to the socio-economic development and energy sector of these nations. The company's commitment to technological innovation and sustainable practices has allowed BP to adapt to the changing energy landscape while ensuring a responsible approach towards the environment.<br><br>BP's dedication to safety and operational excellence is evident in its rigorous safety measures and stringent quality control protocols. Through robust risk management systems and continuous improvement initiatives, the company strives to minimize accidents and enhance the overall safety of its operations. Furthermore, BP's investments in renewable energy sources demonstrate its recognition of the global shift towards cleaner and more sustainable energy solutions. By actively exploring and investing in wind, solar, and biofuels, BP is positioning itself to be at the forefront of the energy transition, thereby contributing to a more environmentally friendly future.</p><h2>Sunoco</h2><p>Sunoco, one of the major players in the <a href="https://fuel-cards.net">oil and gas</a> industry, has a rich history and a significant presence in the market. With a range of operations that encompass refining, marketing, and distributing petroleum products, Sunoco is a leading name in the energy sector. The company has an extensive network of retail fuel stations, providing consumers with reliable access to gasoline and diesel fuels.<br><br>Apart from its retail segment, Sunoco also operates a diverse portfolio of businesses, including chemical manufacturing and logistics services. With a strong focus on safety, environmental responsibility, and innovation, Sunoco continually strives to deliver high-quality products while minimizing its impact on the environment. As a responsible corporate citizen, Sunoco actively participates in community development initiatives and invests in sustainable practices to promote a greener future. With its commitment to excellence and its broad range of services, Sunoco maintains a competitive edge in a rapidly evolving global market.</p><h2>Gulf</h2><p>Gulf is one of the major oil companies in the world, with a strong presence in the petroleum industry. The company has a rich history, dating back to its establishment in 1901. Over the years, Gulf has continuously expanded its operations and diversified its portfolio. Today, Gulf is known for its expertise in exploration, production, refining, and distribution of oil and gas products.<br><br>One of Gulf's key strengths lies in its extensive network of refineries and terminals strategically located across the globe. This allows the company to efficiently process crude oil into various refined products and efficiently transport them to customers worldwide. Gulf also places a strong emphasis on operational excellence and has implemented innovative technologies to enhance efficiency, reduce environmental impact, and ensure high safety standards in its operations.<br><br>Gulf's commitment to sustainable practices is evident in its efforts to invest in renewable energy sources. The company has made significant investments in solar power projects, biofuels, and electric vehicle charging infrastructure. By embracing the transition to clean energy, Gulf is positioning itself for long-term success in a rapidly evolving energy landscape.<br><br>In summary, Gulf's long-standing presence in the oil and gas industry, along with its robust infrastructure and commitment to sustainability, make it a formidable player in the global energy market. As the world continues to focus on reducing carbon emissions and exploring alternative energy sources, Gulf is well-positioned to navigate these changes and maintain its leading position in the industry.</p><p></p>
+                        
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+ 
+
+
+        <!-- Newsletter Start -->
+        <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 border rounded p-1">
+                    <div class="border rounded text-center p-1">
+                        <div class="bg-white rounded text-center p-5">
+                            <h4 class="mb-4">Fuel Cards For Fleet Vehicle Fueling</span></h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter Start -->
+        
+
+       <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-primary rounded p-4">
+                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">Fuel Cards For Fleet Vehicle Fueling</h1></a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>138 Adams Avenue ,  Annapolis Junction  MD 21403</p>
+                      
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@fuel-cards.net</p>
+                        
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Pages</h6>
+                                <a class="btn btn-link" href="about.html">About Us</a>
+                                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                                <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                                <a class="btn btn-link" href="terms.html">Terms & Condition</a>
+								<a class="btn btn-link" href="ada-compliance.html">ADA Compliance</a>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Useful Links</h6>
+                                <a class="btn btn-link" href="wex.html">WEX</a>
+                                <a class="btn btn-link" href="shell.html">Shell</a>
+                                <a class="btn btn-link" href="citgo.html">Citgo</a>
+                                <a class="btn btn-link" href="valero.html">Valero</a>
+                                <a class="btn btn-link" href="blog.html">Blog</a>
+								
                             </div>
                         </div>
-                </div>
-            </div>
-        </header>
-        <!-- Page Content-->
-        <section id="scroll">
-            <div class="container px-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <p><h2>Shell</h2><p>Shell is a global energy company that focuses on providing energy solutions to meet the world's growing demand. With operations in more than 70 countries, Shell is involved in various aspects of the energy industry, including exploration, production, refining, and marketing. The company is constantly investing in research and development to develop innovative technologies and sustainable energy solutions. Shell also places great emphasis on safety and environmental stewardship in all its operations.<br/><br/>One of Shell's key strengths lies in its diverse portfolio, which includes not only oil and gas, but also renewable energy sources such as biofuels, wind, and solar. This diversification allows the company to adapt to changing market conditions and contribute to the global transition towards a low-carbon future. Additionally, Shell is actively exploring opportunities in areas such as electric vehicle charging infrastructure and hydrogen fuel cell technology, positioning itself as a leader in the energy transition. With its strong track record and commitment to innovation, Shell continues to play a vital role in ensuring a reliable and sustainable energy supply for the world.</p><h2>ExxonMobil</h2><p>With a history that spans over a century, ExxonMobil has firmly established itself as one of the world's leading energy companies. Known for its relentless pursuit of innovation, the company has consistently pushed the boundaries of what is possible in the oil and gas industry.  <br/><br/>ExxonMobil's dedication to sustainability is evident in its commitment to reducing greenhouse gas emissions and investing in renewable energy sources. The company has made significant advancements in developing cleaner technologies and has implemented rigorous measures to ensure that operations are conducted in an environmentally responsible manner. By continually seeking ways to minimize its environmental impact and promote sustainable practices, ExxonMobil is positioning itself as a leader in the transition to a low-carbon future.</p><h2>Chevron</h2><p>Chevron is one of the major players in the oil and gas industry, known for its global presence and diverse portfolio. With operations spanning across more than 180 countries, Chevron has established itself as a leading integrated energy company. The company's primary focus remains on exploration, production, refining, and marketing of petroleum and petrochemical products.<br/><br/>From cutting-edge technology solutions to strong partnerships, Chevron is committed to delivering reliable and affordable energy solutions to meet the world's growing demand. With a solid track record of operational excellence, Chevron continually strives towards sustainable practices and reducing the environmental impact of its operations. Furthermore, the company is actively investing in research and development to drive innovation in the energy sector.<br/><br/>Chevron's commitment to safety, integrity, and corporate responsibility is evident in its stringent safety protocols and compliance standards. The company places great importance on maintaining a positive relationship with communities where it operates, promoting local economic development and community engagement initiatives. As Chevron continues to navigate the evolving energy landscape, it remains dedicated to providing value to its stakeholders while maintaining a strong focus on sustainability and responsible business practices.</p><h2>BP</h2><p>BP, one of the leading players in the global energy market, has established itself as a major oil and gas company. With operations spanning across six continents, BP's presence is felt in numerous countries, contributing significantly to the socio-economic development and energy sector of these nations. The company's commitment to technological innovation and sustainable practices has allowed BP to adapt to the changing energy landscape while ensuring a responsible approach towards the environment.<br/><br/>BP's dedication to safety and operational excellence is evident in its rigorous safety measures and stringent quality control protocols. Through robust risk management systems and continuous improvement initiatives, the company strives to minimize accidents and enhance the overall safety of its operations. Furthermore, BP's investments in renewable energy sources demonstrate its recognition of the global shift towards cleaner and more sustainable energy solutions. By actively exploring and investing in wind, solar, and biofuels, BP is positioning itself to be at the forefront of the energy transition, thereby contributing to a more environmentally friendly future.</p><h2>Sunoco</h2><p>Sunoco, one of the major players in the <a href="https://fuel-cards.net">oil and gas</a> industry, has a rich history and a significant presence in the market. With a range of operations that encompass refining, marketing, and distributing petroleum products, Sunoco is a leading name in the energy sector. The company has an extensive network of retail fuel stations, providing consumers with reliable access to gasoline and diesel fuels.<br/><br/>Apart from its retail segment, Sunoco also operates a diverse portfolio of businesses, including chemical manufacturing and logistics services. With a strong focus on safety, environmental responsibility, and innovation, Sunoco continually strives to deliver high-quality products while minimizing its impact on the environment. As a responsible corporate citizen, Sunoco actively participates in community development initiatives and invests in sustainable practices to promote a greener future. With its commitment to excellence and its broad range of services, Sunoco maintains a competitive edge in a rapidly evolving global market.</p><h2>Gulf</h2><p>Gulf is one of the major oil companies in the world, with a strong presence in the petroleum industry. The company has a rich history, dating back to its establishment in 1901. Over the years, Gulf has continuously expanded its operations and diversified its portfolio. Today, Gulf is known for its expertise in exploration, production, refining, and distribution of oil and gas products.<br/><br/>One of Gulf's key strengths lies in its extensive network of refineries and terminals strategically located across the globe. This allows the company to efficiently process crude oil into various refined products and efficiently transport them to customers worldwide. Gulf also places a strong emphasis on operational excellence and has implemented innovative technologies to enhance efficiency, reduce environmental impact, and ensure high safety standards in its operations.<br/><br/>Gulf's commitment to sustainable practices is evident in its efforts to invest in renewable energy sources. The company has made significant investments in solar power projects, biofuels, and electric vehicle charging infrastructure. By embracing the transition to clean energy, Gulf is positioning itself for long-term success in a rapidly evolving energy landscape.<br/><br/>In summary, Gulf's long-standing presence in the oil and gas industry, along with its robust infrastructure and commitment to sustainability, make it a formidable player in the global energy market. As the world continues to focus on reducing carbon emissions and exploring alternative energy sources, Gulf is well-positioned to navigate these changes and maintain its leading position in the industry.</p></p>
-                        <hr /><h3>Related Links</h3><a class="text-primary" href="what-is-the-easiest-fuel-card-to-get-2.html">What is the easiest fuel card to get?</a><br /><a class="text-primary" href="what-fuel-card-works-everywhere.html">What fuel card works everywhere?</a><br />
                     </div>
                 </div>
             </div>
-        </section>
-                </div>
-                <div class="clearfix"></div>
-                <br>
-                <br>
-                <div class="container px-5">
-                <div>
-                    
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="py-5 bg-gray-200 text-muted">
             <div class="container">
-                <div class="row">
-                      <div class="col-lg-8 mb-5 mb-lg-0">
-                       <div style=" display: inherit" class="fw-bold text-uppercase text-dark mb-3">
-                        <a href="terms.html">Terms of Use</a>
-                       </div>
-
-                        <div style=" display: inherit" class="fw-bold text-uppercase text-dark mb-3">
-                        <a href="privacy.html">Privacy Policy</a>
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            Copyright &copy; 2024 Fuel-Cards.net - All Rights Reserved. 
+							
                         </div>
-
-                    </div>
-                    <div class="col-lg-4">
-                       <h6 style=" display: inherit" class="text-uppercase text-dark mb-3">
-                        <a href="sitemap.html">Sitemap</a>
-                        </h6>
-
-                       <h6 style=" display: none" class="text-uppercase text-dark mb-3">
-                        <a href="contact.html">Contact Us!</a>
-                        </h6>
-
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer-->
-        <footer class="py-5 bg-footer text-center footer-text-color">
-         <div class="container mb-4 ql-editor" id="sitewide-footer" style="display:none">
-                
-        </div>
-            <div class="container mb-4">
-            <a href="https://fuel-cards.net" style="text-decoration: none;">
-            <p class="m-0 text-center ">
-            <span class="navbar-brand" ><img style="max-height:30px; height: 30px !important; display: none " src="" onerror="this.remove()"></span>
-                <span class="navbar-brand">Fleet Fuel Card</span>
-            </p>
-            </a>
-            </div>
-           <ul class="list-inline mb-4" style="display: none">
-                <li class="list-inline-item" style="display: none">
-                    <a class="social-link rounded-circle footer-text-color mr-3" target="_blank"  href=""><i class="icon-social-facebook"></i></a>
-                </li>
-                <li class="list-inline-item"  style="display: none">
-                    <a class="social-link rounded-circle footer-text-color mr-3" target="_blank"  href=""><i class="icon-social-twitter"></i></a>
-                </li>
-                <li class="list-inline-item"  style="display: none">
-                    <a class="social-link rounded-circle footer-text-color" target="_blank"  href=""><i class="icon-social-instagram"></i></a>
-                </li>
-                <li class="list-inline-item"  style="display: none">
-                    <a class="social-link rounded-circle footer-text-color" target="_blank"  href=""><i class="icon-social-pinterest"></i></a>
-                </li>
-                <li class="list-inline-item"  style="display: none">
-                    <a class="social-link rounded-circle footer-text-color" target="_blank"  href=""><i class="icon-social-youtube"></i></a>
-                </li>
-            </ul>
-            <div class="container"><p class="m-0 text-center">Copyright &copy; Fuel Card. All rights reserved.</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
